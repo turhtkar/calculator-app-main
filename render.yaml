@@ -13,8 +13,8 @@ services:
   - type: web
     name: react-frontend
     env: static
-    buildCommand: cd calculator-app-client && npm install && npm run build
-    staticPublishPath: ./calculator-app-client/build
+    buildCommand: cd frontend && npm install && npm run build
+    staticPublishPath: ./frontend/build
     routes:
       - type: rewrite
         source: /*

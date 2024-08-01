@@ -3,6 +3,10 @@
 **/.pnp
 **/.pnp.js
 
+# Frontend
+frontend/node_modules
+frontend/build
+
 # Testing
 **/coverage
 
