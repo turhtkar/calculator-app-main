@@ -9,7 +9,7 @@ class Config:
     password = quote_plus("eq43opeLp8q0KEox")
     MONGO_URI = (
         f"mongodb+srv://orielsher1:{password}@fishycluster.l43rehd.mongodb.net/"
-        f"fishyUsers?retryWrites=true&w=majority&tlsCAFile={certifi.where()}"
+        f"fishyUsers?retryWrites=true&w=majority&tls=true&tlsCAFile={certifi.where()}"
     )
     
     JWT_SECRET_KEY = os.environ.get('JWT_SECRET_KEY') or 'super-secret'
