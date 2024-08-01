@@ -9,7 +9,7 @@ mongo = PyMongo()
 jwt = JWTManager()
 
 def create_app(config_class=Config):
-    app = Flask(__name__)
+    app = Flask(__name__, static_folder='../calculator-app-client/build', static_url_path='/')
     app.config.from_object(config_class)
 
     CORS(app, supports_credentials=True)
